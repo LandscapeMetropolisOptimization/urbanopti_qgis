@@ -368,17 +368,6 @@ class UrbanOptiPlugin:
             "Info", "Reading data from layers",
             level=Qgis.Info, duration=1)
 
-        self.modeldlg.trafficLayer.setCurrentText("AirbreakOD-line")
-
-        self.modeldlg.trailPointLayer.setCurrentText("Infrastrutture-Point")
-        self.modeldlg.trailLineLayer.setCurrentText("Ciclabili-linestring")
-
-        self.modeldlg.railwayPointLayer.setCurrentText("MetropoliPaesaggio_masterplan:Stazioni_ferroviarie")
-        self.modeldlg.railwayLineLayer.setCurrentText("ferrovie-linestring")
-
-        self.modeldlg.canalPointLayer.setCurrentText("Approdi - potenziali \"fermate d'acqua\" Fermate acqua")
-        self.modeldlg.canalLineLayer.setCurrentText("Canali-linestring")
-
         # Read network data from QGIS interface
         netdata = UrbanData(self.iface,
                             area='region',
